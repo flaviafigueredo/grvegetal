@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'pt-BR' }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    {%- feed_meta -%}
+    <link href="/assets/css/app.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="font-sans bg-cream text-ink">
     {{ content }}
   </body>
 </html>

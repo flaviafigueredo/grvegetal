@@ -9,10 +9,13 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-tailwind
+
+tailwind:
+  input: assets/css/app.css
+  minify: true
 
 exclude:
-  - node_modules
-  - package.json
-  - package-lock.json
-  - tailwind.config.js
   - README.md
+  - Gemfile
+  - Gemfile.lock

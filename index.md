@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: Home
 ---
 
-## You're ready to go!
+<h1 class="font-serif text-6xl text-brand">Ciência e Precisão no Campo</h1>
 
-Start developing your Jekyll website.
