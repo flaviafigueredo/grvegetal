@@ -5,6 +5,9 @@ lang: pt-BR
 url: ""        # preencher com o domínio final (ex: https://grvegetal.com.br)
 baseurl: ""
 
+contact:
+  whatsapp: "55NUMERO"
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
