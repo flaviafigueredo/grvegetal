@@ -2,11 +2,12 @@
 layout: default
 title: Home
 description: Consultoria agronômica especializada em fitopatologia e fisiologia vegetal, com foco em produtividade e sustentabilidade.
+hero_image_preload: /assets/images/hero/hero.webp
 ---
 
 <section class="relative flex min-h-[70vh] items-center overflow-hidden bg-brand-deep py-16 md:min-h-[85vh] md:py-0">
   <img src="/assets/images/hero/hero.webp" alt="Lavoura ao amanhecer"
-    class="absolute inset-0 h-full w-full object-cover">
+    class="absolute inset-0 h-full w-full object-cover" fetchpriority="high" width="1920" height="1440">
 
   <div class="absolute inset-0 bg-black/55 lg:bg-black/0 lg:bg-gradient-to-r lg:from-black/80 lg:via-black/60 lg:via-50% lg:to-transparent"></div>
 
