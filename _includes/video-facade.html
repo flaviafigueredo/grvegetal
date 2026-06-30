@@ -1,0 +1,22 @@
+{%- assign thumb_src = include.thumb -%}
+{%- unless thumb_src -%}
+  {%- assign thumb_src = "https://i.ytimg.com/vi/" | append: include.id | append: "/hqdefault.jpg" -%}
+{%- endunless -%}
+
+<div class="group">
+  <button type="button" class="video-facade relative block w-full aspect-video overflow-hidden rounded cursor-pointer"
+    data-id="{{ include.id }}" aria-label="Assistir: {{ include.title | escape }}">
+    <img src="{{ thumb_src }}" alt="" loading="lazy" width="480" height="360"
+      class="h-full w-full object-cover brightness-75 transition-transform duration-700 group-hover:scale-110">
+    <span class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+      <span
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-accent/90 text-ink shadow-lg transition-transform group-hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"></path>
+        </svg>
+      </span>
+    </span>
+  </button>
+  <h3 class="mt-4 font-serif text-xl text-ink">{{ include.title }}</h3>
+  <p class="mt-1 text-ink/70">{{ include.desc }}</p>
+</div>
