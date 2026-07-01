@@ -1,0 +1,28 @@
+<footer class="bg-brand text-cream">
+  <div class="mx-auto max-w-[1200px] px-6 py-12">
+    <div class="flex flex-col items-center gap-8 md:flex-row md:items-center md:justify-between">
+      <div>
+        <img src="/assets/images/logos/logo-horizontal.svg" alt="GR Vegetal" style="width: 160px; height: auto;">
+      </div>
+
+      <nav class="flex flex-col items-center gap-3 sm:flex-row sm:gap-8" aria-label="Rodapé">
+        <a href="/mentorias/" class="text-cream/70 transition-colors hover:text-accent">Mentorias</a>
+        <a href="/diagnose/" class="text-cream/70 transition-colors hover:text-accent">Diagnose</a>
+        <a href="/blog/" class="text-cream/70 transition-colors hover:text-accent">Blog</a>
+        <a href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener"
+          class="text-cream/70 transition-colors hover:text-accent">Fale conosco</a>
+      </nav>
+    </div>
+
+    <div class="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-cream/50">
+      <a href="/politica-de-privacidade/" class="transition-colors hover:text-accent">Política de Privacidade</a>
+      <a href="/termos-de-uso/" class="transition-colors hover:text-accent">Termos de Uso</a>
+    </div>
+
+    <div class="mt-6 border-t border-cream/10 pt-6 text-center text-sm text-cream/50">
+      <p>
+        &copy; {{ 'now' | date: "%Y" }} GR Vegetal — Consultoria agronômica de precisão. Todos os direitos reservados.
+      </p>
+    </div>
+  </div>
+</footer>
