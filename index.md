@@ -26,11 +26,11 @@ hero_image_preload: /assets/images/hero/hero.webp
 
       <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
         <a href="/mentorias/"
-          class="w-full rounded bg-brand px-8 py-4 text-center text-sm font-medium uppercase tracking-wider text-cream transition hover:bg-accent hover:text-ink sm:w-auto">
+          class="btn btn-solid w-full sm:w-auto">
           Conhecer mentorias
         </a>
         <a href="/diagnose/"
-          class="w-full rounded border border-cream/60 bg-cream/10 px-8 py-4 text-center text-sm font-medium uppercase tracking-wider text-cream backdrop-blur-sm transition hover:bg-cream hover:text-brand sm:w-auto">
+          class="btn btn-ghost w-full sm:w-auto">
           Solicitar diagnose
         </a>
       </div>
@@ -264,6 +264,16 @@ hero_image_preload: /assets/images/hero/hero.webp
       %}
     </div>
   </div>
+</section>
+
+<section class="border-b border-cream/10 bg-brand px-6 py-12 text-center">
+  <h2 class="mx-auto max-w-2xl font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">
+    Pronto para elevar o nível técnico da sua produção?
+  </h2>
+  <a href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener" class="btn btn-solid-inverse mt-8">
+    {% include icon-whatsapp.html size="20" %}
+    Iniciar conversa no WhatsApp
+  </a>
 </section>
 
 <script src="/assets/js/video-facade.js" defer></script>

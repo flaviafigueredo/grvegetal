@@ -8,6 +8,7 @@
   font-display: swap;
   src: url("/assets/fonts/dm-serif-display-400.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
@@ -15,6 +16,7 @@
   font-display: swap;
   src: url("/assets/fonts/dm-sans-400.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
@@ -22,6 +24,7 @@
   font-display: swap;
   src: url("/assets/fonts/dm-sans-500.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
@@ -36,18 +39,40 @@
   --font-serif: "DM Serif Display", ui-serif, Georgia, serif;
 
   /* Principais */
-  --color-brand: #104C48;       /* verde principal: header, footer, botões */
-  --color-brand-deep: #054D35;  /* verde mais fundo: hover, gradiente, seção escura */
-  --color-accent: #0FCA62;      /* verde vibrante: CTAs e destaques */
-  --color-ink: #0A2E2C;         /* texto */
+  --color-brand: #104C48; /* verde principal: header, footer, botões */
+  --color-brand-deep: #054D35; /* verde mais fundo: hover, gradiente, seção escura */
+  --color-accent: #0FCA62; /* verde vibrante: CTAs e destaques */
+  --color-ink: #0A2E2C; /* texto */
 
   /* Superfícies claras */
-  --color-cream: #FDF1D8;       /* creme principal */
-  --color-sand: #E5D9CA;        /* areia: fundo alternado */
-  --color-linen: #EBE6CF;       /* linho: terceiro neutro */
+  --color-cream: #FDF1D8; /* creme principal */
+  --color-sand: #E5D9CA; /* areia: fundo alternado */
+  --color-linen: #EBE6CF; /* linho: terceiro neutro */
 
   /* Acentos de apoio */
-  --color-clay: #5B3A29;        /* marrom terroso */
-  --color-brick: #8D322B;       /* vermelho tijolo / vinho */
-  --color-navy: #1F3A5F;        /* azul escuro */
+  --color-clay: #5B3A29; /* marrom terroso */
+  --color-brick: #8D322B; /* vermelho tijolo / vinho */
+  --color-navy: #1F3A5F; /* azul escuro */
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-3 rounded px-8 py-4 text-sm font-medium uppercase tracking-wider transition-colors duration-200;
+  }
+
+  .btn-solid {
+    @apply bg-brand text-cream hover:bg-accent hover:text-ink;
+  }
+
+  .btn-solid-inverse {
+    @apply bg-cream text-brand hover:bg-accent hover:text-ink;
+  }
+
+  .btn-ghost {
+    @apply border border-cream/60 bg-cream/10 text-cream backdrop-blur-sm hover:bg-cream hover:text-brand;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-ink hover:bg-cream hover:text-brand;
+  }
 }
