@@ -25,12 +25,10 @@ hero_image_preload: /assets/images/hero/hero.webp
       </p>
 
       <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-        <a href="/mentorias/"
-          class="btn btn-solid w-full sm:w-auto">
+        <a href="/mentorias/" class="btn btn-solid w-full sm:w-auto">
           Conhecer mentorias
         </a>
-        <a href="/diagnose/"
-          class="btn btn-ghost w-full sm:w-auto">
+        <a href="/diagnose/" class="btn btn-ghost w-full sm:w-auto">
           Solicitar diagnose
         </a>
       </div>
@@ -209,6 +207,14 @@ hero_image_preload: /assets/images/hero/hero.webp
             lidera as investigações de campo e análise laboratoriais da GR Vegetal. Graduado em Agronomia e Ciências
             Biológicas, com Mestrado e Doutorado em Agronomia.
           </p>
+        </div>
+
+        <div class="mt-8 text-center lg:text-left">
+          <a href="https://www.linkedin.com/in/carlosecheveste/" target="_blank" rel="noopener"
+            class="btn btn-ghost w-full md:w-auto">
+            {% include icon-linkedin.html size="20" %}
+            Conectar no LinkedIn
+          </a>
         </div>
       </div>
 

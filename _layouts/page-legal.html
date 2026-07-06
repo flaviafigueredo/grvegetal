@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="bg-cream py-16 md:py-24">
+  <div class="mx-auto max-w-[720px] px-6">
+    <h1 class="font-serif text-4xl leading-tight text-ink md:text-5xl">{{ page.title }}</h1>
+
+    {% if page.updated %}
+    <p class="mt-4 text-sm text-ink/50">Última atualização: {{ page.updated }}</p>
+    {% endif %}
+
+    <div class="legal-prose mt-10 space-y-6 text-ink/80">
+      {{ content }}
+    </div>
+  </div>
+</article>
