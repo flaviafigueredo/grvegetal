@@ -86,6 +86,10 @@
     @apply bg-accent text-ink hover:bg-cream hover:text-brand;
   }
 
+  .section-py {
+    @apply py-8 md:py-10 lg:py-12;
+  }
+
   .legal-prose h2 {
     @apply font-serif text-2xl text-ink mt-10 mb-3;
   }

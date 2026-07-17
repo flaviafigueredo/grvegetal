@@ -36,7 +36,7 @@ hero_image_preload: /assets/images/hero/hero.webp
   </div>
 </section>
 
-<section class="bg-cream py-20 md:py-28 lg:py-32">
+<section class="bg-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
     <div class="max-w-3xl mx-auto">
       <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl lg:text-5xl text-balance">
@@ -113,7 +113,7 @@ hero_image_preload: /assets/images/hero/hero.webp
   </div>
 </section>
 
-<section class="bg-sand py-20 md:py-28 lg:py-32">
+<section class="bg-sand section-py">
   <div class="mx-auto max-w-[1200px] px-6">
     <ul>
       <li>
@@ -191,10 +191,9 @@ hero_image_preload: /assets/images/hero/hero.webp
   </div>
 </section>
 
-<section class="overflow-hidden bg-brand py-20 text-cream md:py-28 lg:py-32">
+<section class="overflow-hidden bg-brand text-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
-    <div class="flex flex-col gap-10 lg:flex-row lg:items-center">
-
+    <div class="flex flex-col gap-10 lg:flex-row lg:items-center pb-8">
       <div class="lg:flex-1">
         <h2 class="font-serif text-4xl leading-tight text-cream md:text-5xl text-balance">
           Eng. Agr. Carlos Renato Echeveste da Rosa
@@ -230,7 +229,7 @@ hero_image_preload: /assets/images/hero/hero.webp
   </div>
 </section>
 
-<section class="bg-sand py-20 md:py-28 lg:py-32">
+<section class="bg-sand section-py">
   <div class="mx-auto max-w-[1200px] px-6">
     <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
       <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl lg:text-5xl text-balance">
@@ -272,7 +271,7 @@ hero_image_preload: /assets/images/hero/hero.webp
   </div>
 </section>
 
-<section class="border-b border-cream/10 bg-brand px-6 py-12 text-center">
+<section class="border-b border-cream/10 bg-brand text-center section-py">
   <h2 class="mx-auto max-w-2xl font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">
     Pronto para elevar o nível técnico da sua produção?
   </h2>
