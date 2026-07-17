@@ -171,7 +171,7 @@ hero_image_preload: /assets/images/hero/hero.webp
             <span
               class="w-12 shrink-0 font-serif text-4xl leading-none text-ink/20 transition-colors group-hover:text-accent md:w-auto md:text-5xl">03</span>
             <div>
-              <h3 class="font-serif text-2xl text-brand">Blog Agimycologia</h3>
+              <h3 class="font-serif text-2xl text-brand">Blog Agrimycologia</h3>
               <p class="mt-1 text-ink/70">Artigos técnicos e estudos de caso.</p>
             </div>
           </div>
