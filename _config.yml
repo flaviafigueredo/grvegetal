@@ -8,11 +8,28 @@ baseurl: ""
 contact:
   whatsapp: "5542984066897"
 
+permalink: /blog/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-tailwind
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 20
+  permalink: /:num/
+  sort_reverse: true
+  sort_field: date
 
 tailwind:
   input: assets/css/app.css

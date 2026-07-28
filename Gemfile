@@ -7,4 +7,5 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"    # meta tags de SEO e compartilhamento
   gem "jekyll-sitemap"    # sitemap.xml pro Google
   gem "jekyll-tailwind"   # roda o Tailwind v4 no build
+  gem "jekyll-paginate-v2" 
 end
