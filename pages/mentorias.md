@@ -4,21 +4,119 @@ title: Mentorias
 description: Mentorias em fitopatologia e manejo de doenças de plantas para agrônomos, técnicos e produtores.
 permalink: /mentorias/
 hero_image_preload: /assets/images/hero/hero-pages.webp
+
+hero:
+  titulo: Mentorias
+  subtitulo: Acesso direto à experiência de campo e laboratório, com orientação personalizada para o seu contexto.
+
+dor:
+  titulo: Você já passou por isso?
+  imagem: /assets/images/mentorias/plantas-soja-murchas.png
+  imagem_alt: "Agricultor apontando plantas de soja murchas."
+  fechamento: Se você reconhece essas situações, a mentoria é pra você.
+  perguntas:
+  - "Entrou na lavoura e encontrou plantas mortas, será doença radicular ou de haste, o que fazer?"
+  - "Folhas do baixeiro amarelando, murchando e secando, qual a causa?"
+  - "Plântulas morrendo em reboleiras na lavoura..."
+  - "Manchas foliares aumentando..."
+  - "Raízes deformadas e escurecidas, será a cultivar ou o solo?"
+  - "Doenças aumentando de intensidade na maturação, será que faço mais uma aplicação?"
+  - "Faço rotação de culturas anualmente, mas as doenças só aumentam. O que estou fazendo de errado?"
+  - "Qual cultivar/híbrido é melhor para abertura de plantio? E para o fechamento?"
+  - "Na safra passada os fungicidas controlaram bem as doenças, nesta safra o controle não está bom..."
+
+para_quem:
+  titulo: Para quem é
+  publicos:
+  - nome: Agrônomos e Biólogos
+    texto: Em busca de atualização e aprofundamento técnico em Fitopatologia e Manejo de Doenças de Plantas.
+    icone: formatura
+  - nome: Técnicos Agrícolas
+    texto: Interessados na identificação e manejo de doenças de plantas em situações reais de campo.
+    icone: ferramenta
+  - nome: Produtores Rurais
+    texto: Que queiram adquirir conhecimentos em Fitopatologia.
+    icone: pessoas
+  - nome: Estudantes de Graduação
+    texto: De Agronomia ou Biologia, interessados numa formação complementar em Fitopatologia.
+    icone: livro
+
+como_funciona:
+  titulo: Como funciona
+  texto: "Encontros semanais ou quinzenais online, ao vivo, com uma hora de duração. Agendamento pelo WhatsApp. Programa, cronograma e material de apoio definidos no primeiro encontro. Ao final você recebe um relatório final da mentoria, com a avaliação do progresso alcançado e dos pontos de melhoria."
+
+o_que_muda:
+  titulo: O que muda depois da mentoria
+  itens:
+  - Você será capaz de identificar os principais grupos de doenças de plantas.
+  - Conhecerá os métodos de controle de doenças de plantas e saberá decidir quando adotar cada um.
+  - Saberá o que fazer quando encontrar uma doença na lavoura.
+  - Aprenderá o jeito certo de coletar amostras e a interpretar laudos de diagnose.
+  - Terá maior segurança no planejamento do manejo fitossanitário de sua lavoura.
+
+orientador:
+  titulo: Quem vai te orientar
+  foto: /assets/images/team/carlos.webp
+  foto_alt: Eng. Agr. Carlos Renato Echeveste da Rosa
+  texto: "Neste programa de mentoria, compartilho com você minha experiência de mais de 25 anos trabalhando com pesquisa e extensão em Fitopatologia. Sei bem como é difícil ter certeza do diagnóstico a campo, principalmente quando os sintomas não são tão claros como aparecem nos manuais, o que frequentemente acontece. E se o problema não for identificado corretamente, o risco de tomar uma decisão errada é enorme. Daí é prejuízo certo. Minha proposta é colocar meu conhecimento e experiência em benefícios dos mentorados, contribuindo para seu aprimoramento técnico e crescimento profissional."
+
+planos:
+  titulo: Planos
+  subtitulo: Escolha a modalidade que combina com o seu momento profissional.
+  lista:
+  - nome: Plano Profissional
+    descricao: "Para profissionais que desejam atualizar ou aprofundar conhecimentos em Fitopatologia. Ideal para quem já atua no agro e enfrenta desafios diários de identificar e manejar doenças."
+    preco: "R$ 300"
+    unidade: /hora
+    largo: false
+    link: "https://pay.hotmart.com/Q106949372E"
+  - nome: Plano Pesquisador
+    descricao: "Suporte técnico para pesquisas On-Farm e produção de conhecimento customizado para a realidade da sua fazenda. Também para estudo orientado de publicações técnicas e científicas."
+    preco: "R$ 300"
+    unidade: /hora
+    largo: false
+    link: "https://pay.hotmart.com/D106951255L"
+  - nome: Plano Estudante
+    descricao: "Encontros semanais ou quinzenais para orientação de trabalhos acadêmicos e formação complementar. Para quem quer consolidar os conceitos de Fitopatologia vistos na graduação."
+    preco: "R$ 150"
+    unidade: /hora
+    largo: false
+    link: "https://pay.hotmart.com/H106952307C"
+  - nome: Plano Grupo
+    descricao: "Encontros quinzenais com até 4 pessoas, com foco no aprendizado a partir de situações reais enviadas pelos alunos. Ideal para trocar experiências e ampliar o network profissional."
+    preco: "R$ 200"
+    unidade: /hora
+    largo: true
+    link: "https://pay.hotmart.com/I106952408N"
+  - nome: Cursos
+    descricao: "Acesso a conteúdo gravado (10 aulas) para estudar no seu ritmo, com acesso por um ano. Possibilidade de agendar sessões de perguntas e respostas."
+    preco: "R$ 1.500"
+    unidade: à vista ou 12x de R$ 155,13
+    largo: true
+    link: "https://pay.hotmart.com/L106952581P"
+
+faq:
+  titulo: Perguntas frequentes
+  itens:
+  - pergunta: As mentorias são ao vivo ou gravadas?
+    resposta: Temos as duas modalidades. Aulas gravadas para quem prefere estudar no seu ritmo e tempo. E aulas online ao vivo para quem prefere interação em tempo real.
+  - pergunta: Preciso ter formação em Agronomia para participar?
+    resposta: Não. O conteúdo e a linguagem são adaptados de acordo com o background do aluno. O objetivo é capacitar o aluno para tomar a melhor decisão na sua lavoura.
+  - pergunta: Como são agendados os encontros?
+    resposta: Através do WhatsApp.
 ---
 
 <section class="relative flex min-h-[45vh] items-center overflow-hidden bg-brand-deep py-20 md:min-h-[50vh] md:py-24">
-  <img src="/assets/images/hero/hero-pages.webp" alt="Lavoura"
+  <img src="{{ page.hero_image_preload }}" alt="Lavoura"
     class="absolute inset-0 h-full w-full object-cover" fetchpriority="high" width="1600" height="720">
-
   <div class="absolute inset-0 bg-black/60 lg:bg-black/0 lg:bg-gradient-to-r lg:from-black/80 lg:via-black/50 lg:via-50% lg:to-transparent"></div>
-
   <div class="relative z-10 mx-auto w-full max-w-[1200px] px-6">
     <div class="max-w-2xl text-cream">
       <h1 class="font-serif text-4xl leading-tight tracking-tight text-balance drop-shadow-md md:text-5xl lg:text-6xl">
-        Mentorias
+        {{ page.hero.titulo }}
       </h1>
       <p class="mt-6 max-w-lg text-base leading-relaxed text-cream/90 drop-shadow text-pretty sm:text-lg">
-        Acesso direto à experiência de campo e laboratório, com orientação personalizada para o seu contexto.
+        {{ page.hero.subtitulo }}
       </p>
     </div>
   </div>
@@ -26,120 +124,19 @@ hero_image_preload: /assets/images/hero/hero-pages.webp
 
 <section class="bg-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      Você já passou por isso?
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Descreva a situação frustrante que o teu cliente vive antes de te procurar. O que ele tenta, o que dá errado, o que ele perde?
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Essa é a seção mais importante da página. A pessoa precisa se reconhecer aqui, senão não continua lendo. Pensa nas queixas que tu mais escuta.
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          Você viu a mancha na folha, aplicou o fungicida que sempre funcionou, e duas semanas depois ela voltou pior. Ou pior: aplicou, gastou, e o problema nem era aquele. Sem o diagnóstico certo, cada aplicação é um palpite caro. E o prejuízo não aparece só no custo do produto: aparece na produtividade que você deixou na lavoura.
-        </p>
+    <div class="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+      <div class="lg:flex-1">
+        <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.dor.titulo }}</h2>
+        <ul class="mt-8 space-y-4 text-lg leading-relaxed text-ink/80">
+          {% for pergunta in page.dor.perguntas %}
+          <li>{{ pergunta }}</li>
+          {% endfor %}
+        </ul>
+        <p class="mt-8 text-lg font-medium text-brand text-pretty">{{ page.dor.fechamento }}</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-sand section-py">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      Para quem é
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Quem exatamente deve fazer a mentoria? Seja específico: que tipo de profissional, em que situação, com que dificuldade?
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Evite "para todos que gostam de agronomia". Quanto mais específico, mais a pessoa certa se reconhece.
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          Agrônomos que atendem várias propriedades e precisam diagnosticar rápido, sem mandar tudo pra laboratório. Técnicos agrícolas que querem parar de depender de palpite na hora de recomendar manejo. Produtores que não têm agrônomo fixo e tomam as decisões sozinhos.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="bg-cream section-py">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      O que muda depois da mentoria
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        O que a pessoa vai saber fazer depois que não sabia antes? Qual a transformação concreta?
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Não é sobre o que a mentoria <strong>tem</strong> (encontros, materiais). É sobre o que a pessoa <strong>ganha</strong>. Pensa: o que ela consegue fazer sozinha depois?
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          Você vai olhar pra planta e reconhecer o que está acontecendo, sem depender de chute. Vai saber quando o problema é doença, quando é nutricional, e quando é as duas coisas juntas. Vai escolher o manejo certo na primeira tentativa, e vai saber justificar tecnicamente por que escolheu aquele. Na prática: menos aplicação desperdiçada, menos perda de produtividade, mais segurança na hora de decidir.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-sand section-py">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      Como funciona
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Como acontece na prática? Os encontros são online? Com que frequência? Quanto dura cada um? Tem material de apoio? Como é o agendamento?
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Aqui é operacional mesmo. Quanto mais claro, menos gente desiste por não saber o que esperar.
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          Os encontros são online, ao vivo, com uma hora de duração. Você agenda pelo WhatsApp na melhor data pra você. Antes de cada encontro, você me manda as fotos e o histórico da área, e eu chego preparado. Depois, você recebe um resumo escrito com as recomendações discutidas.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-brand section-py text-cream">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">
-      Quem vai te orientar
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-cream/90 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Por que você é quem deve orientar essa pessoa? Traduza sua experiência em benefício pra ela.
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Não é currículo. "Já vi esse problema centenas de vezes" vale mais que "doutor em agronomia". O que sua trajetória significa pra ela?
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          Em vinte anos de fitopatologia, eu já vi a mesma mancha enganar muito agrônomo experiente. Já errei também, no começo, e foi errando que aprendi a olhar pro que ninguém olha. Passei por laboratório, por campo, e por doutorado, mas o que eu levo pra mentoria não é teoria: é o padrão que só se enxerga depois de milhares de plantas analisadas. Quando você me traz um caso, é grande a chance de eu já ter visto ele antes.
-        </p>
+      <div class="lg:flex-1">
+        <img src="{{ page.dor.imagem }}" alt="{{ page.dor.imagem_alt }}" loading="lazy" width="1536" height="2752"
+          class="max-h-[700px] w-full object-cover">
       </div>
     </div>
   </div>
@@ -147,127 +144,80 @@ hero_image_preload: /assets/images/hero/hero-pages.webp
 
 <section class="bg-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      Quem já passou por aqui
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Quem já fez tua mentoria (ou já foi orientado por ti) e toparia dar um depoimento? Preciso de 2 ou 3: nome, cargo/propriedade, e o que mudou pra pessoa.
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Depoimento é a peça que mais vende numa página assim. Se tu ainda não tem, vale pedir pra alguém que já orientou, mesmo que informalmente. Uma frase curta e específica vale mais que um elogio genérico.
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          "Eu vinha aplicando fungicida três vezes por safra e o problema sempre voltava. Depois de duas sessões com o Renato, entendi que metade do que eu achava que era doença era deficiência nutricional. Cortei uma aplicação inteira e a lavoura respondeu melhor." — João Pereira, produtor de trigo, Guarapuava/PR
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-sand section-py">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      Planos
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Quais são as modalidades, o preço de cada uma, e o link da Hotmart? Pra cada uma: nome, 2-3 linhas de descrição, valor e link.
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Na descrição, foque na diferença entre elas: quem deve escolher qual? A pessoa precisa saber qual é a dela em 5 segundos.
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          <strong>Mentoria Individual</strong> — Pra quem tem um problema específico e quer resolver agora. Encontros um a um, focados no seu caso, com análise das suas fotos e histórico.
-        </p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          <strong>Mentoria em Grupo</strong> — Pra quem quer aprender vendo casos diferentes do seu. Encontros quinzenais com até 8 pessoas, onde cada um traz um caso e todos aprendem juntos.
-        </p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          <strong>Cursos</strong> — Pra quem prefere estudar no próprio ritmo. Conteúdo gravado sobre diagnose e manejo, com acesso vitalício.
-        </p>
-      </div>
-    </div>
-
-    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-      <div class="flex flex-col border border-clay/15 bg-linen/40 p-8">
-        <h3 class="font-serif text-2xl text-brand">Mentoria Individual</h3>
-        <p class="mt-3 text-ink/70 leading-relaxed">
-          [Descrição]
-        </p>
-        <div class="mt-6 font-serif text-3xl text-ink">
-          R$ [valor]
+    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.para_quem.titulo }}</h2>
+    <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      {% for publico in page.para_quem.publicos %}
+      <div class="flex gap-4 border border-clay/15 bg-cream/50 p-6">
+        {% include public-icon.html tipo=publico.icone %}
+        <div>
+          <h3 class="font-serif text-lg text-ink">{{ publico.nome }}</h3>
+          <p class="mt-1 text-ink/70 text-pretty">{{ publico.texto }}</p>
         </div>
-        <a href="#" class="btn btn-solid mt-6 w-full">
-          Quero esta mentoria
-        </a>
       </div>
+      {% endfor %}
+    </div>
 
-      <div class="flex flex-col border border-clay/15 bg-linen/40 p-8">
-        <h3 class="font-serif text-2xl text-brand">Mentoria em Grupo</h3>
-        <p class="mt-3 text-ink/70 leading-relaxed">
-          [Descrição]
-        </p>
-        <div class="mt-6 font-serif text-3xl text-ink">
-          R$ [valor]
-        </div>
-        <a href="#" class="btn btn-solid mt-6 w-full">
-          Quero esta mentoria
-        </a>
-      </div>
+    <div class="mt-16 grid grid-cols-1 gap-4 border-t border-clay/15 pt-10 md:grid-cols-[240px_1fr] md:gap-12">
+      <h3 class="font-serif text-2xl text-ink">{{ page.como_funciona.titulo }}</h3>
+      <p class="text-lg leading-relaxed text-ink/80 text-pretty">{{ page.como_funciona.texto }}</p>
+    </div>
 
-      <div class="flex flex-col border border-clay/15 bg-linen/40 p-8">
-        <h3 class="font-serif text-2xl text-brand">Cursos</h3>
-        <p class="mt-3 text-ink/70 leading-relaxed">
-          [Descrição]
-        </p>
-        <div class="mt-6 font-serif text-3xl text-ink">
-          R$ [valor]
-        </div>
-        <a href="#" class="btn btn-solid mt-6 w-full">
-          Quero este curso
-        </a>
+    <div class="mt-10 grid grid-cols-1 gap-4 border-t border-clay/15 pt-10 md:grid-cols-[240px_1fr] md:gap-12">
+      <h3 class="font-serif text-2xl text-ink">{{ page.o_que_muda.titulo }}</h3>
+      <ul class="space-y-4">
+        {% for item in page.o_que_muda.itens %}
+        <li class="flex gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span class="text-lg leading-relaxed text-ink/80">{{ item }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="mt-10 text-center">
+      <a href="#planos" class="btn btn-solid">
+        Ver planos e condições
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-brand section-py text-cream overflow-hidden">
+  <div class="mx-auto max-w-[1200px] px-6">
+    <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+      <div class="lg:flex-1">
+        <h2 class="font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">{{ page.orientador.titulo }}</h2>
+        <p class="mt-8 text-lg leading-relaxed text-cream/80 text-pretty">{{ page.orientador.texto }}</p>
       </div>
+      <div class="self-center lg:shrink-0">
+        <div class="relative w-fit">
+          <div class="absolute -inset-4 lg:translate-x-4 lg:translate-y-4 border border-accent/30" aria-hidden="true"></div>
+          <img src="{{ page.orientador.foto }}" alt="{{ page.orientador.foto_alt }}" loading="lazy"
+            class="relative z-10 h-auto w-full max-w-[300px] lg:h-[450px] lg:w-auto lg:max-w-none">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand section-py scroll-mt-24" id="planos">
+  <div class="mx-auto max-w-[1200px] px-6">
+    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.planos.titulo }}</h2>
+    <p class="mt-4 max-w-2xl text-lg text-ink/70 text-pretty">{{ page.planos.subtitulo }}</p>
+    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-6">
+      {% for plano in page.planos.lista %}
+        {% include plans-card.html plano=plano %}
+      {% endfor %}
     </div>
   </div>
 </section>
 
 <section class="bg-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
-    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-      Perguntas frequentes
-    </h2>
-
-    <div class="my-6 border-2 border-dashed border-brick bg-brick/5 p-6">
-      <p class="text-sm font-bold uppercase tracking-wider text-brick">✏️ Seu texto aqui</p>
-      <p class="mt-3 font-medium text-ink">
-        Quais são as dúvidas que as pessoas mais te fazem <strong>antes</strong> de fechar? E as respostas?
-      </p>
-      <p class="mt-2 text-sm text-ink/70">
-        Pensa nas objeções: o que faz a pessoa hesitar? Preço, tempo, "será que funciona pra mim?". Cada dúvida respondida aqui é uma venda que não se perde.
-      </p>
-      <div class="mt-4 border-l-4 border-clay/30 bg-cream/60 p-4">
-        <p class="text-xs font-bold uppercase tracking-wider text-clay">Exemplo de como poderia ser</p>
-        <p class="mt-2 italic text-ink/70 leading-relaxed">
-          <strong>P: Funciona pra quem não tem formação em agronomia?</strong><br>
-          R: Sim. Boa parte dos meus mentorados são produtores sem formação técnica. A linguagem é adaptada, e o foco é você conseguir decidir melhor na sua lavoura, não passar numa prova.
-        </p>
-      </div>
-    </div>
-
+    <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.faq.titulo }}</h2>
     <div class="mt-10">
-      {% include faq-item.html q="As mentorias são ao vivo ou gravadas?" a="[Resposta]" %}
-      {% include faq-item.html q="Preciso ter formação em agronomia para participar?" a="[Resposta]" %}
-      {% include faq-item.html q="Como funciona o agendamento dos encontros?" a="[Resposta]" %}
-      {% include faq-item.html q="Posso cancelar depois de comprar?" a="[Resposta]" %}
+      {% for item in page.faq.itens %}
+        {% include faq-item.html q=item.pergunta a=item.resposta %}
+      {% endfor %}
     </div>
   </div>
 </section>
