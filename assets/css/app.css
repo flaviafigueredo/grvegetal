@@ -118,3 +118,7 @@
     @apply font-medium text-ink;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
