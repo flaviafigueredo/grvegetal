@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* ----- Fontes em /assets/fonts ----- */
 @font-face {
   font-family: "DM Serif Display";
   font-style: normal;
@@ -34,35 +33,21 @@
 }
 
 @theme {
-  /* ----- Tipografia ----- */
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "DM Serif Display", ui-serif, Georgia, serif;
 
-  /* Principais */
   --color-brand: #104C48;
-  /* verde principal: header, footer, botões */
   --color-brand-deep: #054D35;
-  /* verde mais fundo: hover, gradiente, seção escura */
   --color-accent: #0FCA62;
-  /* verde vibrante: CTAs e destaques */
   --color-ink: #0A2E2C;
-  /* texto */
 
-  /* Superfícies claras */
   --color-cream: #FDF1D8;
-  /* creme principal */
   --color-sand: #E5D9CA;
-  /* areia: fundo alternado */
   --color-linen: #EBE6CF;
-  /* linho: terceiro neutro */
 
-  /* Acentos de apoio */
   --color-clay: #5B3A29;
-  /* marrom terroso */
   --color-brick: #8D322B;
-  /* vermelho tijolo / vinho */
   --color-navy: #1F3A5F;
-  /* azul escuro */
 }
 
 @layer components {
@@ -99,15 +84,15 @@
   }
 
   .legal-prose p {
-    @apply leading-relaxed;
+    @apply leading-relaxed mb-6;
   }
 
   .legal-prose ul {
-    @apply list-disc space-y-2 pl-6;
+    @apply list-disc space-y-2 pl-6 mb-6;
   }
 
   .legal-prose ol {
-    @apply list-decimal space-y-2 pl-6;
+    @apply list-decimal space-y-2 pl-6 mb-6;
   }
 
   .legal-prose a {
@@ -116,6 +101,34 @@
 
   .legal-prose strong {
     @apply font-medium text-ink;
+  }
+
+  .legal-prose img {
+    @apply my-8 w-full;
+  }
+
+  .legal-prose blockquote {
+    @apply my-8 border-l-4 border-clay/30 bg-sand/40 p-6 text-ink/80;
+  }
+
+  .legal-prose table {
+    @apply my-8 block w-full overflow-x-auto border-collapse text-sm;
+  }
+
+  .legal-prose th {
+    @apply whitespace-nowrap border border-clay/20 bg-sand/50 p-3 text-left font-medium text-ink;
+  }
+
+  .legal-prose td {
+    @apply border border-clay/20 p-3 text-ink/80;
+  }
+
+  .legal-prose figure {
+    @apply mt-8 mb-10;
+  }
+
+  .legal-prose figcaption {
+    @apply mt-3 text-sm italic text-ink/60;
   }
 }
 
