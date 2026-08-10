@@ -1,0 +1,79 @@
+---
+layout: default
+title: Página não encontrada
+permalink: /404.html
+---
+
+<section class="flex min-h-[60vh] items-center bg-cream section-py">
+  <div class="mx-auto max-w-[1200px] px-6 text-center">
+    <div class="flex items-center justify-center gap-1 sm:gap-3">
+      <p class="font-serif text-7xl leading-none text-brand md:text-8xl">4</p>
+      <div class="w-28 shrink-0 sm:w-36 md:w-44">
+        <svg class="gr-404" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Ilustração de uma lupa inspecionando um broto, no lugar do zero">
+
+          <style>
+            .gr-404 { display: block; width: 100%; height: auto; }
+
+            .gr-404 .sprout { transform-box: fill-box; transform-origin: 50% 100%; animation: gr-sway 4.5s ease-in-out infinite; }
+            .gr-404 .lens   { transform-box: fill-box; transform-origin: 50% 50%; animation: gr-scan 6s ease-in-out infinite; }
+            .gr-404 .glint  { animation: gr-glint 6s ease-in-out infinite; }
+            .gr-404 .spore  { transform-box: fill-box; transform-origin: 50% 50%; animation: gr-float 5s ease-in-out infinite; }
+            .gr-404 .spore-2 { animation-delay: 2.2s; }
+
+            @keyframes gr-sway  { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+            @keyframes gr-scan  { 0%,100% { transform: translate(0,0) rotate(0deg); } 50% { transform: translate(7px,-5px) rotate(-4deg); } }
+            @keyframes gr-glint { 0%,100% { opacity: .25; } 50% { opacity: .7; } }
+            @keyframes gr-float { 0% { transform: translateY(4px) scale(.9); opacity: 0; } 30% { opacity: .8; } 100% { transform: translateY(-22px) scale(1.1); opacity: 0; } }
+
+            @media (prefers-reduced-motion: reduce) {
+              .gr-404 .sprout, .gr-404 .lens, .gr-404 .glint, .gr-404 .spore { animation: none; }
+            }
+          </style>
+
+          <!-- anel do "zero" -->
+          <circle cx="100" cy="100" r="82" fill="none" stroke="#104C48" stroke-width="16" />
+          <circle cx="100" cy="100" r="82" fill="none" stroke="#054D35" stroke-width="16"
+            stroke-dasharray="30 480" stroke-linecap="round" opacity="0.5" />
+
+          <!-- solo -->
+          <path d="M52 132 Q100 120 148 132" fill="none" stroke="#5B3A29" stroke-width="3" stroke-linecap="round" />
+
+          <!-- broto -->
+          <g class="sprout">
+            <path d="M100 132 C100 116 100 108 100 92" fill="none" stroke="#054D35" stroke-width="4"
+              stroke-linecap="round" />
+            <path d="M100 110 C86 107 77 96 75 84 C91 84 102 95 100 110 Z" fill="#104C48" />
+            <path d="M100 102 C114 98 125 87 127 73 C111 75 100 87 100 102 Z" fill="#0FCA62" />
+          </g>
+
+          <!-- esporos -->
+          <circle class="spore" cx="130" cy="92" r="3" fill="#0FCA62" />
+          <circle class="spore spore-2" cx="74" cy="94" r="2.5" fill="#104C48" />
+
+          <!-- lupa -->
+          <g class="lens">
+            <line x1="70" y1="96" x2="52" y2="114" stroke="#0A2E2C" stroke-width="6" stroke-linecap="round" />
+            <circle cx="85" cy="81" r="24" fill="#FDF1D8" fill-opacity="0.55" stroke="#0A2E2C" stroke-width="5" />
+            <circle cx="85" cy="81" r="24" fill="none" stroke="#104C48" stroke-width="2" opacity="0.4" />
+            <path class="glint" d="M75 71 Q78 68 83 68" fill="none" stroke="#FDF1D8" stroke-width="3"
+              stroke-linecap="round" />
+          </g>
+        </svg>
+      </div>
+
+      <p class="font-serif text-7xl leading-none text-brand md:text-8xl">4</p>
+    </div>
+
+    <h1 class="mt-8 font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
+      Esta página não foi encontrada
+    </h1>
+    <p class="mx-auto mt-4 max-w-md text-lg text-ink/70 text-pretty">
+      O endereço que você procura pode ter sido movido ou não existe mais.
+    </p>
+    <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="/" class="btn btn-solid w-full sm:w-auto">Voltar ao início</a>
+      <a href="/blog/" class="btn btn-outline w-full sm:w-auto">Ir para o blog</a>
+    </div>
+  </div>
+</section>
