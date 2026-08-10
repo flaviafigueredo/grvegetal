@@ -71,6 +71,10 @@
     @apply bg-accent text-ink hover:bg-cream hover:text-brand;
   }
 
+  .btn-outline {
+    @apply border border-brand text-brand hover:bg-brand hover:text-cream;
+  }
+
   .section-py {
     @apply py-8 md:py-10 lg:py-12;
   }
