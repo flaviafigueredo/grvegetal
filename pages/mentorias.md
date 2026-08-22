@@ -65,7 +65,7 @@ planos:
   subtitulo: Escolha a modalidade que combina com o seu momento profissional.
   lista:
   - nome: Plano Profissional
-    descricao: "Para profissionais que desejam atualizar ou aprofundar conhecimentos em Fitopatologia. Ideal para quem já atua no agro e enfrenta desafios diários de identificar e manejar doenças."
+    descricao: "Ideal para quem já atua no agro e enfrenta desafios para identificar e manejar doenças."
     preco: "R$ 300"
     unidade: /hora
     largo: false
