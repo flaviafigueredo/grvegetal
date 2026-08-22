@@ -2,11 +2,11 @@
 layout: default
 title: Diagnose
 description: Diagnóstico técnico de doenças de plantas a partir de fotos e informações da sua lavoura, com laudo elaborado por especialista em Fitopatologia.
-permalink: /diagnose/
+permalink: /clinica-vegetal/
 hero_image_preload: /assets/images/hero/hero-pages.webp
 
 hero:
-  titulo: Diagnose
+  titulo: Clínica Vegetal
   subtitulo: Diagnóstico técnico de doenças de plantas, feito por quem entende do assunto, a partir das fotos e informações da sua lavoura.
 
 o_que_e:

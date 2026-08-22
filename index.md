@@ -14,7 +14,7 @@ hero:
     url: "/mentorias/"
     style: "btn-solid"
   - label: "Solicitar diagnose"
-    url: "/diagnose/"
+    url: "/clinica-vegetal/"
     style: "btn-ghost"
 ciencia:
   title: "A Ciência Por Trás do Rendimento"
