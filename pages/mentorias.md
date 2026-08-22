@@ -11,8 +11,8 @@ hero:
 
 dor:
   titulo: Você já passou por isso?
-  imagem: /assets/images/mentorias/plantas-soja-murchas.png
-  imagem_alt: "Agricultor apontando plantas de soja murchas."
+  imagem: /assets/images/mentorias/plantas.webp
+  imagem_alt: "Campo de plantas"
   fechamento: Se você reconhece essas situações, a mentoria é pra você.
   perguntas:
   - "Entrou na lavoura e encontrou plantas mortas, será doença radicular ou de haste, o que fazer?"
@@ -135,7 +135,7 @@ faq:
         <p class="mt-8 text-lg font-medium text-brand text-pretty">{{ page.dor.fechamento }}</p>
       </div>
       <div class="lg:flex-1">
-        <img src="{{ page.dor.imagem }}" alt="{{ page.dor.imagem_alt }}" loading="lazy" width="1536" height="2752"
+        <img src="{{ page.dor.imagem }}" alt="{{ page.dor.imagem_alt }}" loading="lazy" width="1047" height="1600"
           class="max-h-[700px] w-full object-cover">
       </div>
     </div>
