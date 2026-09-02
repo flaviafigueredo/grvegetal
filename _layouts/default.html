@@ -6,7 +6,7 @@
     {%- seo -%}
     {%- feed_meta -%}
     <link rel="icon" type="image/png" href="/assets/images/favicon/favicon.png">
-    {% if page.hero_image_preload %}
+    {% if page.hero_image %}
     <link rel="preload" as="image" href="{{ page.hero_image }}" type="image/webp" fetchpriority="high">
     {% endif %}
     <link href="/assets/css/app.css" rel="stylesheet">

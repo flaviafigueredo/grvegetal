@@ -3,7 +3,7 @@ layout: default
 title: Mentorias
 description: Mentorias em fitopatologia e manejo de doenças de plantas para agrônomos, técnicos e produtores.
 permalink: /mentorias/
-hero_image_preload: /assets/images/hero/hero-pages.webp
+hero_image: /assets/images/hero/hero-pages.webp
 
 hero:
   titulo: Mentorias
@@ -107,7 +107,7 @@ faq:
 ---
 
 <section class="relative flex min-h-[45vh] items-center overflow-hidden bg-brand-deep py-20 md:min-h-[50vh] md:py-24">
-  <img src="{{ page.hero_image_preload }}" alt="Lavoura"
+  <img src="{{ page.hero_image }}" alt="Lavoura"
     class="absolute inset-0 h-full w-full object-cover" fetchpriority="high" width="1600" height="720">
   <div class="absolute inset-0 bg-black/60 lg:bg-black/0 lg:bg-gradient-to-r lg:from-black/80 lg:via-black/50 lg:via-50% lg:to-transparent"></div>
   <div class="relative z-10 mx-auto w-full max-w-[1200px] px-6">

@@ -5,11 +5,11 @@ description: Artigos técnicos e estudos de caso sobre fitopatologia, fisiologia
 permalink: /blog/
 pagination:
   enabled: true
-hero_image_preload: /assets/images/hero/hero-blog.webp
+hero_image: /assets/images/hero/hero-blog.webp
 ---
 
 <section class="relative flex min-h-[45vh] items-center overflow-hidden bg-brand-deep py-20 md:min-h-[50vh] md:py-24">
-  <img src="/assets/images/hero/hero-blog.webp" alt="Lavoura" class="absolute inset-0 h-full w-full object-cover"
+  <img src="{{ page.hero_image }}" alt="Lavoura" class="absolute inset-0 h-full w-full object-cover"
     fetchpriority="high" width="1600" height="900">
   <div
     class="absolute inset-0 bg-black/60 lg:bg-black/0 lg:bg-gradient-to-r lg:from-black/80 lg:via-black/50 lg:via-50% lg:to-transparent">
