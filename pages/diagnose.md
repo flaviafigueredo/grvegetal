@@ -19,21 +19,34 @@ o_que_e:
 
 como_funciona:
   title: Como funciona
-  steps:
-    - number: "01"
-      title: "Solicite o Serviço"
-      desc: "Você preenche um formulário que gera um número de protocolo."
-    - number: "02"
-      title: "Envie as Informações"
-      items:
-        - "Se a diagnose for na modalidade <strong>SOS Doenças</strong> (online), você envia fotos e vídeos do problema. É o método mais rápido e ágil."
-        - "Se a diagnose for na modalidade <strong>Clínica Vegetal</strong> você coleta e envia amostras físicas por Sedex. Toda amostra deve conter o número de protocolo gerado na contratação do serviço."
-    - number: "03"
-      title: "Amostras em Análise"
-      desc: "Nós realizamos as análises, comunicamos e você efetua o pagamento na plataforma Hotmart."
-    - number: "04"
-      title: "Receba o Laudo"
-      desc: "Você recebe o laudo com o diagnóstico e recomendações."
+  fluxos:
+    - nome: SOS Doenças
+      ilustracao: sos
+      steps:
+        - number: "01"
+          title: "Chame no WhatsApp"
+          desc: "Você fala com a gente direto pelo WhatsApp, sem formulário."
+        - number: "02"
+          title: "Combinamos o caminho"
+          desc: "Conversamos sobre o seu problema e definimos a melhor forma de analisar: fotos, vídeos, videochamada ou um mix, conforme o caso."
+        - number: "03"
+          title: "Receba a orientação"
+          desc: "A análise sai na hora ou em até 24h. Se precisar de um laudo técnico formal, a gente te orienta a seguir pela Clínica Vegetal."
+    - nome: Clínica Vegetal
+      ilustracao: clinica
+      steps:
+        - number: "01"
+          title: "Solicite o Serviço"
+          desc: "Você preenche o formulário e nós geramos um número de protocolo."
+        - number: "02"
+          title: "Envie a Amostra"
+          desc: "Você coleta e envia a amostra física por Sedex. Toda amostra deve conter o número de protocolo gerado na solicitação."
+        - number: "03"
+          title: "Amostras em Análise"
+          desc: "Nós realizamos as análises e avisamos quando estiverem prontas."
+        - number: "04"
+          title: "Receba o Laudo"
+          desc: "Você efetua o pagamento na plataforma Hotmart e recebe o laudo com o diagnóstico e as recomendações."
   obs: "Toda a comunicação é realizada por WhatsApp ou Email."
 
 modalidades:
@@ -42,9 +55,14 @@ modalidades:
     - name: "SOS Doenças"
       desc: "Diagnóstico remoto através de videochamada ou da análise de imagens e vídeos de sintomas na lavoura."
       price: "R$ 75,00"
+      cta_label: "Falar no WhatsApp"
+      cta_tipo: whatsapp
     - name: "Clínica Vegetal"
       desc: "Você nos envia a amostra e realizamos a análise em laboratório. No final, você recebe um laudo com o diagnóstico."
       price: "R$ 120,00"
+      cta_label: "Solicitar diagnose"
+      cta_tipo: form
+      form_url: "https://forms.gle/iYrVoyWKRhySY6bx9"
 
 faq:
   title: Perguntas frequentes
@@ -59,10 +77,6 @@ faq:
       a: "Neste caso é necessário enviar amostras para realizar a diagnose."
     - q: "As fotos e vídeos substituem a análise laboratorial?"
       a: "Não. O diagnóstico remoto limita-se aos sintomas visíveis nas imagens e vídeos fornecidos."
-
-cta:
-  label: Solicitar diagnose
-  form_url: "https://forms.gle/iYrVoyWKRhySY6bx9" 
 ---
 
 <section class="relative flex min-h-[45vh] items-center overflow-hidden bg-brand-deep py-20 md:min-h-[50vh] md:py-24">
@@ -85,11 +99,11 @@ cta:
   <div class="mx-auto max-w-[1200px] px-6">
     <div class="flex flex-col items-start gap-12 lg:flex-row lg:gap-16">
       <div class="lg:flex-1">
-        <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">
-          {{ page.o_que_e.title }}
-        </h2>
+        <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.o_que_e.title }}</h2>
         <div class="mt-8 space-y-6 text-lg leading-relaxed text-ink/80 text-pretty">
-          {% for paragraph in page.o_que_e.paragraphs %} <p>{{ paragraph }}</p> {% endfor %} 
+          {% for paragraph in page.o_que_e.paragraphs %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
         </div>
       </div>
       <div class="lg:flex-1">
@@ -103,32 +117,81 @@ cta:
   <div class="mx-auto max-w-[1200px] px-6">
     <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.como_funciona.title }}</h2>
 
-    <ol class="mt-12">
-      {% for step in page.como_funciona.steps %}
-      <li class="flex flex-col gap-3 border-b border-clay/15 py-8 md:flex-row md:gap-8">
-        <span class="w-16 shrink-0 font-serif text-4xl leading-none text-ink/20 md:text-5xl">{{ step.number }}</span>
-        <div class="md:flex-1">
-          <h3 class="font-serif text-2xl text-brand text-balance">{{ step.title }}</h3>
-          {% if step.desc %}
-          <p class="mt-2 leading-relaxed text-ink/80 text-pretty">{{ step.desc }}</p>
-          {% endif %}
-          {% if step.items %}
-          <ul class="mt-4 space-y-3 leading-relaxed text-ink/80 text-pretty">
-            {% for item in step.items %}
-            <li class="flex gap-3">
-              <span class="mt-2.5 h-1.5 w-1.5 shrink-0 bg-accent" aria-hidden="true"></span>
-              <span>{{ item }}</span>
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
+    <div class="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
+      {% for fluxo in page.como_funciona.fluxos %}
+      <div>
+        <div class="mb-4 w-16 md:w-20">
+          {% case fluxo.ilustracao %}
+          {% when 'sos' %}
+          <svg class="gr-sos" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Ilustração de atendimento rápido por conversa">
+            <style>
+              .gr-sos { display: block; width: 100%; height: auto; }
+              .gr-sos .sprig { transform-box: fill-box; transform-origin: 50% 100%; animation: sos-sway 7s ease-in-out infinite; }
+              .gr-sos .ping { transform-box: fill-box; transform-origin: center; animation: sos-ping 6s ease-in-out infinite; }
+              .gr-sos .ping-2 { animation-delay: .7s; }
+              @keyframes sos-sway { 0%, 100% { transform: rotate(-2.5deg); } 50% { transform: rotate(2.5deg); } }
+              @keyframes sos-ping { 0%, 55%, 100% { opacity: .15; transform: scale(.9); } 25% { opacity: .7; transform: scale(1.05); } }
+              @media (prefers-reduced-motion: reduce) { .gr-sos .sprig, .gr-sos .ping { animation: none; } }
+            </style>
+            <path d="M24 30 h52 a8 8 0 0 1 8 8 v22 a8 8 0 0 1 -8 8 h-34 l-12 11 v-11 h-6 a8 8 0 0 1 -8 -8 v-22 a8 8 0 0 1 8 -8 z"
+              fill="#FDF1D8" fill-opacity="0.5" stroke="#104C48" stroke-width="3" stroke-linejoin="round" />
+            <g class="sprig">
+              <path d="M50 62 C50 54 50 50 50 44" fill="none" stroke="#054D35" stroke-width="3" stroke-linecap="round" />
+              <path d="M50 53 C42 51 37 45 36 39 C45 39 51 45 50 53 Z" fill="#104C48" />
+              <path d="M50 49 C58 46 63 40 64 34 C55 35 49 41 50 49 Z" fill="#0FCA62" />
+            </g>
+            <g stroke="#0FCA62" stroke-width="3" stroke-linecap="round" fill="none">
+              <path class="ping" d="M80 30 a9 9 0 0 1 6 6" />
+              <path class="ping ping-2" d="M78 26 a14 14 0 0 1 9 9" />
+            </g>
+          </svg>
+          {% when 'clinica' %}
+          <svg class="gr-cli" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Ilustração de análise em laboratório">
+            <style>
+              .gr-cli { display: block; width: 100%; height: auto; }
+              .gr-cli .leaf { transform-box: fill-box; transform-origin: 50% 100%; animation: cli-sway 8s ease-in-out infinite; }
+              .gr-cli .bub { transform-box: fill-box; transform-origin: center; animation: cli-rise 6s ease-in-out infinite; }
+              .gr-cli .bub-2 { animation-delay: 2.4s; }
+              .gr-cli .bub-3 { animation-delay: 4s; }
+              @keyframes cli-sway { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+              @keyframes cli-rise { 0% { opacity: 0; transform: translateY(6px) scale(.8); } 25% { opacity: .8; } 100% { opacity: 0; transform: translateY(-16px) scale(1); } }
+              @media (prefers-reduced-motion: reduce) { .gr-cli .leaf, .gr-cli .bub { animation: none; } }
+            </style>
+            <path d="M42 20 v40 a8 8 0 0 0 16 0 v-40" fill="#FDF1D8" fill-opacity="0.5" stroke="#104C48" stroke-width="3"
+              stroke-linecap="round" />
+            <line x1="39" y1="20" x2="61" y2="20" stroke="#104C48" stroke-width="3" stroke-linecap="round" />
+            <path d="M42 46 v14 a8 8 0 0 0 16 0 v-14 z" fill="#0FCA62" fill-opacity="0.25" />
+            <g class="leaf">
+              <path d="M50 58 C50 48 50 40 50 24" fill="none" stroke="#054D35" stroke-width="3" stroke-linecap="round" />
+              <path d="M50 40 C42 38 37 32 36 26 C45 26 51 32 50 40 Z" fill="#104C48" />
+              <path d="M50 34 C58 31 63 25 64 19 C55 20 49 26 50 34 Z" fill="#0FCA62" />
+            </g>
+            <circle class="bub" cx="47" cy="54" r="2" fill="#054D35" />
+            <circle class="bub bub-2" cx="53" cy="56" r="1.6" fill="#054D35" />
+            <circle class="bub bub-3" cx="50" cy="52" r="1.3" fill="#054D35" />
+          </svg>
+          {% endcase %}
         </div>
-      </li>
+        <h3 class="font-serif text-2xl text-brand text-balance">{{ fluxo.nome }}</h3>
+        <ol class="mt-6">
+          {% for step in fluxo.steps %}
+          <li class="flex gap-5 border-b border-clay/15 py-6 last:border-b-0">
+            <span class="shrink-0 font-serif text-3xl leading-none text-ink/20 md:text-4xl">{{ step.number }}</span>
+            <div>
+              <h4 class="font-serif text-xl text-ink text-balance">{{ step.title }}</h4>
+              <p class="mt-1 leading-relaxed text-ink/80 text-pretty">{{ step.desc }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
       {% endfor %}
-    </ol>
+    </div>
 
     {% if page.como_funciona.obs %}
-    <p class="mt-8 text-sm text-ink/60">{{ page.como_funciona.obs }}</p>
+    <p class="mt-10 text-sm text-ink/60 text-center">{{ page.como_funciona.obs }}</p>
     {% endif %}
   </div>
 </section>
@@ -144,7 +207,14 @@ cta:
         <p class="mt-3 leading-relaxed text-ink/70 text-pretty">{{ opt.desc }}</p>
         <div class="mt-auto pt-6">
           <p class="font-serif text-3xl text-ink">{{ opt.price }}</p>
-          <a href="{{ page.cta.form_url }}" class="btn btn-solid mt-6 w-full">{{ page.cta.label }}</a>
+          {% if opt.cta_tipo == 'whatsapp' %}
+          <a href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener" class="btn btn-solid mt-6 w-full">
+            {% include icon-whatsapp.html size="20" %}
+            {{ opt.cta_label }}
+          </a>
+          {% else %}
+          <a href="{{ opt.form_url }}" class="btn btn-solid mt-6 w-full">{{ opt.cta_label }}</a>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
