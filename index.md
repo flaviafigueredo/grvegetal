@@ -39,7 +39,7 @@ servicos:
   - number: "02"
     title: "Clínica Vegetal"
     desc: "Diagnose de doenças em campo e laboratório."
-    url: "/diagnose/"
+    url: "/clinica-vegetal/"
     cta: "Solicitar"
   - number: "03"
     title: "Blog Agrimycologia"
@@ -71,7 +71,13 @@ videos_section:
     desc: "Neste vídeo faço uma análise baseada em dados históricos de produtividade da cultura do trigo no sul do Brasil considerando anos com e sem ocorrência do fenômeno El Niño."
 cta:
   title: "Pronto para elevar o nível técnico da sua produção?"
-  whatsapp_label: "Iniciar conversa no WhatsApp"
+  buttons:
+  - label: "Conhecer mentorias"
+    url: "/mentorias/"
+    style: "btn-solid-inverse"
+  - label: "Conhecer Clínica Vegetal"
+    url: "/clinica-vegetal/"
+    style: "btn-ghost"
 ---
 
 <section class="relative flex min-h-[70vh] items-center overflow-hidden bg-brand-deep py-16 md:min-h-[85vh] md:py-0">
@@ -259,10 +265,13 @@ cta:
   <h2 class="mx-auto max-w-2xl font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">
     {{ page.cta.title }}
   </h2>
-  <a href="https://wa.me/{{ site.contact.whatsapp }}" target="_blank" rel="noopener" class="btn btn-solid-inverse mt-8">
-    {% include icon-whatsapp.html size="20" %}
-    {{ page.cta.whatsapp_label }}
-  </a>
+  <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
+    {% for button in page.cta.buttons %}
+    <a href="{{ button.url }}" class="btn {{ button.style }} w-full sm:w-auto">
+      {{ button.label }}
+    </a>
+    {% endfor %}
+  </div>
 </section>
 
 <script src="/assets/js/video-facade.js" defer></script>
