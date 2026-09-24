@@ -253,8 +253,12 @@ cta:
       </a>
     </div>
 
+    {% assign section_videos = site.data.youtube.videos %}
+    {% unless section_videos and section_videos.size > 0 %}
+      {% assign section_videos = page.videos_section.videos %}
+    {% endunless %}
     <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-      {% for video in page.videos_section.videos %}
+      {% for video in section_videos %}
       {% include video-facade.html id=video.id title=video.title desc=video.desc %}
       {% endfor %}
     </div>

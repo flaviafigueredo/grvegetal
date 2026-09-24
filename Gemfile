@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
+gem "rexml"   # parser XML do feed do YouTube
 
 group :jekyll_plugins do
   gem "jekyll-feed"       # gera o RSS do blog
