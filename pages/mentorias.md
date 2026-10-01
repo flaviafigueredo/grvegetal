@@ -56,7 +56,7 @@ o_que_muda:
 
 orientador:
   titulo: Quem vai te orientar
-  foto: /assets/images/team/carlos.webp
+  foto: /assets/images/team/carlos-renato.webp
   foto_alt: Eng. Agr. Carlos Renato Echeveste da Rosa
   texto: "Neste programa de mentoria, compartilho com você minha experiência de mais de 25 anos trabalhando com pesquisa e extensão em Fitopatologia. Sei bem como é difícil ter certeza do diagnóstico a campo, principalmente quando os sintomas não são tão claros como aparecem nos manuais, o que frequentemente acontece. E se o problema não for identificado corretamente, o risco de tomar uma decisão errada é enorme. Daí é prejuízo certo. Minha proposta é colocar meu conhecimento e experiência em benefícios dos mentorados, contribuindo para seu aprimoramento técnico e crescimento profissional."
 
