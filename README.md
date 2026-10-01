@@ -43,9 +43,11 @@ O resultado sai na pasta `_site/`.
 
 ```
 .
-├── _config.yml            configuração do Jekyll: plugins, Tailwind, dados do site
+├── _config.yml            configuração do Jekyll: plugins, Tailwind, dados do site, id do canal do YouTube
 ├── Gemfile                dependências Ruby
 ├── .ruby-version          versão do Ruby (3.2.3)
+├── _plugins/
+│   └── youtube_feed.rb    busca os vídeos mais recentes do canal durante o build
 ├── _layouts/
 │   ├── default.html       layout base: <head>, header, footer, botão flutuante de WhatsApp
 │   ├── post.html          layout de artigo do blog
@@ -123,3 +125,24 @@ Configurados no `_config.yml` e no `Gemfile`:
 - `jekyll-paginate-v2`: paginação do blog (20 posts por página)
 
 O blog usa o permalink `/blog/:slug/`, definido no `_config.yml`.
+
+## Vídeos do YouTube na home
+
+A seção de vídeos da home mostra os 3 vídeos mais recentes do canal, buscados durante o build por um plugin próprio, o `_plugins/youtube_feed.rb`.
+
+- O plugin lê o feed RSS público do canal (`youtube.com/feeds/videos.xml?channel_id=...`). Não usa API do Google nem chave de acesso.
+- O id do canal fica no `_config.yml`, no campo `youtube_channel_id`.
+- O XML do feed é lido com o gem `rexml`, declarado no `Gemfile`.
+- Os vídeos ficam disponíveis no template em `site.data.youtube.videos`.
+
+A busca só acontece no build de produção (`JEKYLL_ENV=production`). No ambiente local, ou se a busca falhar (feed fora do ar, timeout), a seção usa a lista de vídeos fixa do frontmatter da home (`videos_section.videos`) como fallback, e o build não quebra. Vale manter nessa lista uns 3 vídeos bons e atemporais.
+
+Como o site é estático, a lista só se atualiza quando o site é reconstruído, ou seja, a cada novo deploy (um post novo, uma edição de conteúdo). Um vídeo publicado no canal aparece no site no deploy seguinte.
+
+Pra testar a busca real localmente:
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll serve
+```
+
+Se a busca cair no fallback, o log mostra um aviso começando com `YoutubeFeed:` com o motivo.
