@@ -49,6 +49,38 @@ como_funciona:
           desc: "Você efetua o pagamento na plataforma Hotmart e recebe o laudo com o diagnóstico e as recomendações."
   obs: "Toda a comunicação é realizada por WhatsApp ou Email."
 
+galeria:
+  title: Galeria de casos
+  imagens:
+    - src: /assets/images/diagnose/01.webp
+      alt: "Caso 1"
+    - src: /assets/images/diagnose/02.webp
+      alt: "Caso 2"
+    - src: /assets/images/diagnose/03.webp
+      alt: "Caso 3"
+    - src: /assets/images/diagnose/04.webp
+      alt: "Caso 4"
+    - src: /assets/images/diagnose/05.webp
+      alt: "Caso 5"
+    - src: /assets/images/diagnose/06.webp
+      alt: "Caso 6"
+    - src: /assets/images/diagnose/07.webp
+      alt: "Caso 7"
+    - src: /assets/images/diagnose/08.webp
+      alt: "Caso 8"
+    - src: /assets/images/diagnose/09.webp
+      alt: "Caso 9"
+    - src: /assets/images/diagnose/10.webp
+      alt: "Caso 10"
+    - src: /assets/images/diagnose/11.webp
+      alt: "Caso 11"
+    - src: /assets/images/diagnose/12.webp
+      alt: "Caso 12"
+    - src: /assets/images/diagnose/13.webp
+      alt: "Caso 13"
+    - src: /assets/images/diagnose/14.webp
+      alt: "Caso 14"
+
 modalidades:
   title: Modalidades
   options:
@@ -196,6 +228,43 @@ faq:
   </div>
 </section>
 
+<section class="bg-brand section-py">
+  <div class="mx-auto max-w-[1200px] px-6">
+    <h2 class="font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">{{ page.galeria.title }}</h2>
+
+    <div class="relative mt-12">
+      <ul id="galeriaTrack"
+        class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none]">
+        {% for imagem in page.galeria.imagens %}
+        <li class="w-[82%] shrink-0 snap-center sm:w-[48%] lg:w-[32%]">
+          <img src="{{ imagem.src }}" alt="{{ imagem.alt }}" loading="lazy" width="800" height="600"
+            class="aspect-[4/3] w-full rounded object-cover">
+        </li>
+        {% endfor %}
+      </ul>
+
+      <div class="mt-6 flex justify-end gap-3">
+        <button type="button" id="galeriaPrev" aria-label="Imagem anterior"
+          class="flex h-11 w-11 items-center justify-center rounded border border-cream/30 text-cream transition hover:bg-cream/10">
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </button>
+        <button type="button" id="galeriaNext" aria-label="Próxima imagem"
+          class="flex h-11 w-11 items-center justify-center rounded border border-cream/30 text-cream transition hover:bg-cream/10">
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #galeriaTrack::-webkit-scrollbar { display: none; }
+  </style>
+</section>
+
 <section class="bg-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
     <h2 class="font-serif text-3xl leading-snug text-ink md:text-4xl text-balance">{{ page.modalidades.title }}</h2>
@@ -232,3 +301,26 @@ faq:
     </div>
   </div>
 </section>
+<script>
+  (function () {
+    const track = document.getElementById("galeriaTrack");
+    if (!track) return;
+
+    const prev = document.getElementById("galeriaPrev");
+    const next = document.getElementById("galeriaNext");
+
+    // avança/volta a largura de um slide mais o gap (gap-4 = 16px)
+    function stepSize() {
+      const slide = track.querySelector("li");
+      return slide ? slide.getBoundingClientRect().width + 16 : track.clientWidth;
+    }
+
+    prev.addEventListener("click", function () {
+      track.scrollBy({ left: -stepSize(), behavior: "smooth" });
+    });
+
+    next.addEventListener("click", function () {
+      track.scrollBy({ left: stepSize(), behavior: "smooth" });
+    });
+  })();
+</script>
