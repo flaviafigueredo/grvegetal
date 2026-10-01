@@ -53,7 +53,7 @@ bio:
   - "Com mais de 20 anos de experiência em Fitopatologia, Melhoramento Vegetal e Experimentação Agronômica, lidera as investigações de campo e análise laboratoriais da GR Vegetal. Graduado em Agronomia e Ciências Biológicas, com Mestrado e Doutorado em Agronomia."
   linkedin_url: "https://www.linkedin.com/in/carlosecheveste/"
   linkedin_label: "Conectar no LinkedIn"
-  image: "/assets/images/team/carlos.webp"
+  image: "/assets/images/team/carlos-renato.webp"
   image_alt: "Eng. Agr. Carlos Renato Echeveste da Rosa"
 videos_section:
   title: "Conhecimento Técnico em Foco"
@@ -202,7 +202,7 @@ cta:
 
 <section class="overflow-hidden bg-brand text-cream section-py">
   <div class="mx-auto max-w-[1200px] px-6">
-    <div class="flex flex-col gap-10 lg:flex-row lg:items-center pb-8">
+    <div class="flex flex-col gap-12 pb-8 lg:flex-row lg:items-center lg:gap-16">
       <div class="lg:flex-1">
         <h2 class="font-serif text-4xl leading-tight text-cream md:text-5xl text-balance">
           {{ page.bio.name }}
@@ -224,12 +224,12 @@ cta:
         </div>
       </div>
 
-      <div class="self-center lg:shrink-0">
-        <div class="relative w-fit">
+      <div class="lg:flex-1">
+        <div class="relative">
           <div class="absolute -inset-4 lg:translate-x-4 lg:translate-y-4 border border-accent/30" aria-hidden="true">
           </div>
-          <img src="{{ page.bio.image }}" alt="{{ page.bio.image_alt }}" loading="lazy"
-            class="relative z-10 h-auto w-full max-w-[300px] lg:h-[450px] lg:w-auto lg:max-w-none">
+          <img src="{{ page.bio.image }}" alt="{{ page.bio.image_alt }}" loading="lazy" width="1600" height="719"
+            class="relative z-10 aspect-[4/3] w-full object-cover">
         </div>
       </div>
     </div>
