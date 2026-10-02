@@ -266,15 +266,17 @@ cta:
 </section>
 
 <section class="border-b border-cream/10 bg-brand text-center section-py">
-  <h2 class="mx-auto max-w-2xl font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">
-    {{ page.cta.title }}
-  </h2>
-  <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
-    {% for button in page.cta.buttons %}
-    <a href="{{ button.url }}" class="btn {{ button.style }} w-full sm:w-auto">
-      {{ button.label }}
-    </a>
-    {% endfor %}
+  <div class="mx-auto max-w-[1200px] px-6">
+    <h2 class="mx-auto max-w-2xl font-serif text-3xl leading-snug text-cream md:text-4xl text-balance">
+      {{ page.cta.title }}
+    </h2>
+    <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
+      {% for button in page.cta.buttons %}
+      <a href="{{ button.url }}" class="btn {{ button.style }} w-full sm:w-auto">
+        {{ button.label }}
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
