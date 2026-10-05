@@ -50,7 +50,7 @@ bio:
   name: "Eng. Agr. Carlos Renato Echeveste da Rosa"
   role: "Sócio-fundador"
   paragraphs:
-  - "Com mais de 20 anos de experiência em Fitopatologia, Melhoramento Vegetal e Experimentação Agronômica, lidera as investigações de campo e análise laboratoriais da GR Vegetal. Graduado em Agronomia e Ciências Biológicas, com Mestrado e Doutorado em Agronomia."
+  - "Com mais de 25 anos de experiência em Fitopatologia, Melhoramento Vegetal e Experimentação Agronômica, lidera as investigações de campo e análise laboratoriais da GR Vegetal. Graduado em Agronomia e Ciências Biológicas, com Mestrado e Doutorado em Agronomia."
   linkedin_url: "https://www.linkedin.com/in/carlosecheveste/"
   linkedin_label: "Conectar no LinkedIn"
   image: "/assets/images/team/carlos-renato.webp"
