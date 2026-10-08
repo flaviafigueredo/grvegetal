@@ -146,3 +146,7 @@ JEKYLL_ENV=production bundle exec jekyll serve
 ```
 
 Se a busca cair no fallback, o log mostra um aviso começando com `YoutubeFeed:` com o motivo.
+
+## Licença
+
+Todos os direitos reservados à GR Vegetal. O repositório é público para consulta, mas o código, o design, os textos, as imagens e a marca não podem ser copiados ou reutilizados sem autorização. Veja o arquivo [LICENSE](LICENSE).
