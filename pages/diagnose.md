@@ -94,7 +94,7 @@ modalidades:
       price: "R$ 120,00"
       cta_label: "Solicitar diagnose"
       cta_tipo: form
-      form_url: "https://forms.gle/iYrVoyWKRhySY6bx9"
+      form_url: "https://forms.gle/vrSCaTGaDHJtUWwu7"
 
 faq:
   title: Perguntas frequentes
